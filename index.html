@@ -12,16 +12,16 @@
     </header>
     
     <main>
-        <h2>Registro de pokemon</h2>
-        <form action="servidor.php" method="post">
+        <h2>Registro de pokémon</h2>
+        <form id="formDados">
             <div>
                 <label for="nome">Nome:</label>
-                <input type="text">
+                <input type="text" name="nome" id="nome" required>
             </div>
             <br>
             <div>
                 <label for="tipo1">Tipo primário:</label>
-                <input type="text" name="tipo1" id="tipo1">
+                <input type="text" name="tipo1" id="tipo1" required>
             </div>
             <br>
             <div>
@@ -30,13 +30,14 @@
             </div>
             <br>
             <div>
-                <input type="submit" value="Registrar">
+                <button type="submit">Registrar</button>
             </div>
         </form>
 
         <br>
 
-        <table>
+        <table id="tabela" border="1">
+            <caption>Pokémon registrados</caption>
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -73,10 +74,12 @@
                 <tr>
                     <td>Torkoal</td>
                     <td>Fire</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Bidoof</td>
                     <td>Normal</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Bibarel</td>
@@ -98,7 +101,16 @@
             </tfoot>
 
         </table>
+
     </main>
+
+    <footer>
+        <p>IFRN Campus Santa Cruz - Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueredo Júnior</p>
+        <p>Grupo: Alcides Bezerra Costa Neto e Giovana Borges de Medeiros Azevedo de Lima</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
