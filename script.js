@@ -23,19 +23,19 @@ formulario.addEventListener('submit', function(event) {
 
 function ordernarTabela(colunaIndex) {
     const tabela = document.getElementById("tabela");
-    const linhas = Array.from(tabela.rows).slice(1);
+    const linhas = Array.from(tabela.getElementsByTagName('tbody')[0].rows);
 
     const isOrdenada = tabela.getAttribute("data-ordenada") === colunaIndex.toString();
 
     linhas.sort((a, b) => {
-        const celulaA = a.cells[colunaIndex].innerText;
-        const celulaB = b.cells[colunaIndex].innerText;
+        const celulaA = a.cells[colunaIndex].innerText.trim();
+        const celulaB = b.cells[colunaIndex].innerText.trim();
         const valorA = isNaN(celulaA) ? celulaA : parseFloat(celulaA);
         const valorB = isNaN(celulaB) ? celulaB : parseFloat(celulaB);
         return valorA > valorB ? (isOrdenada ? -1 : 1) : (isOrdenada ? 1 : -1);
     })
 
-    linhas.forEach(row => tabela.appendChild(row));
+    linhas.forEach(row => tabela.getElementsByTagName('tbody')[0].appendChild(row));
     tabela.setAttribute("data-ordenada", isOrdenada ? -1 : colunaIndex);
 }
 
