@@ -1,0 +1,6 @@
+.bg-custom {
+    background-image: url('../img/rayquaza_lugia.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
