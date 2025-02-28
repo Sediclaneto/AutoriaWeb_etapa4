@@ -25,10 +25,11 @@ header, footer {
     gap: 20px;
     margin-top: 20px;
     flex-wrap: wrap;
+    opacity: 0.9;
 }
 
 .dev {
-    background-color: #b9ece1;
+    background-color: #b3f3f3;
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 5px;
