@@ -1,3 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('floresta.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .bg-custom {
     background-image: url('../img/rayquaza_lugia.png');
     background-size: cover;
@@ -23,7 +37,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 350px;
+    height: 600px;
     text-align: center;
     word-wrap: break-word;
     align-items: center;
@@ -40,6 +54,13 @@
 
 .contorno {
     color: red;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black, -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black;
+}
+
+.contorno-preto-branco {
+    color: white;
     font-size: 40px;
     font-weight: bold;
     text-shadow: 2px 2px 3px black, -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black;

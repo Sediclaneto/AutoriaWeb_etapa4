@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index_style.css">
 </head>
+
 <body class="bg-custom">
     <div class="container py-3">
         <div class="p-3 text-center">
@@ -24,31 +25,45 @@
 
         <main>
             <h2 class="text-center fw-bold text-white contorno">Registro de pokémon</h2>
-            <form id="formDados" class="text-center">
-                <div>
-                    <label for="nome" class="fw-bold text-white contorno fs-6">Nome:</label>
-                    <input type="text" name="nome" id="nome" required>
+            <form id="formDados" class="container d-flex flex-column align-items-center">
+                <div class="row mb-3 w-50">
+                    <div class="col-md-4">
+                        <label for="nome" class="fw-bold text-white contorno fs-6">Nome:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" name="nome" id="nome" class="form-control" required>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="tipo1" class="fw-bold text-white contorno fs-6">Tipo primário:</label>
-                    <input type="text" name="tipo1" id="tipo1" required>
+                
+                <div class="row mb-3 w-50">
+                    <div class="col-md-4">
+                        <label for="tipo1" class="fw-bold text-white contorno fs-6">Tipo primário:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" name="tipo1" id="tipo1" class="form-control" required>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="tipo2" class="fw-bold text-white contorno fs-6">Tipo secundário</label>
-                    <input type="text" name="tipo2" id="tipo2">
+                
+                <div class="row mb-3 w-50">
+                    <div class="col-md-4">
+                        <label for="tipo2" class="fw-bold text-white contorno fs-6">Tipo secundário:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" name="tipo2" id="tipo2" class="form-control">
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <button type="submit">Registrar</button>
+                
+                <div class="row w-50">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
                 </div>
             </form>
 
             <br>
 
             <table id="tabela" border="1" class="table text-center">
-                <caption class="fw-bold text-dark">Pokémon Registrados</caption>
+                <caption class="fw-bold text-white contorno fs-6">Pokémon Registrados</caption>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -115,7 +130,7 @@
 
         </main>
 
-        <footer class="pt-4 my-5 border-top text-center fw-bold text-dark">
+        <footer class="pt-4 my-5 border-top text-center fw-bold text-white contorno fs-6">
             <p>IFRN Campus Santa Cruz - Trabalho de Autoria Web</p>
             <p>Prof. Marcelo Figueredo Júnior</p>
             <p>Alcides Bezerra Costa Neto &</p>
